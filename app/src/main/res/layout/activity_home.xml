@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".modul.home.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/titlePage"
+            style="@style/customTextViewBold18Sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/home"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/logout"
+            style="@style/customTextViewBold18Sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/logout"
+            android:drawablePadding="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            app:drawableEndCompat="@drawable/icon_logout_svgrepo"
+            tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/layoutTop"
+        android:layout_above="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_bottom"
+        android:elevation="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAverageScore"
+            style="@style/customButton"
+            android:textSize="14sp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/background_button_purple"
+            android:text="@string/average_score"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAverageScoreAndModusEmotion"
+            app:layout_constraintEnd_toStartOf="@+id/buttonModusEmotion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonModusEmotion"
+            style="@style/customButton"
+            android:background="@drawable/background_button_purple"
+            android:backgroundTint="@color/orangeEE6044"
+            android:textSize="14sp"
+            android:text="@string/modus_emotion"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonAverageScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonAverageScore"
+            app:layout_constraintTop_toTopOf="@+id/buttonAverageScore" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAverageScoreAndModusEmotion"
+            style="@style/customButton"
+            android:textSize="14sp"
+            android:background="@drawable/background_button_boarder_purple"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/purple5843BE"
+            android:text="@string/average_score_dan_modus_emotion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/purple5843BE"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

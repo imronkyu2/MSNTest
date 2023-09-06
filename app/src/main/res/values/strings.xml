@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MSNTest</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="view_data">View Data</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="age">Age</string>
+    <string name="login_page">Login Page</string>
+    <string name="register_page">Register Page</string>
+    <string name="view_data_page">View Data Page</string>
+    <string name="msn_test_assessment"><font color="#FF000000">MSN</font> <font color="#5843BE">Test</font> <font color="#EE6044">Assessment</font></string>
+    <string name="ok">OK</string>
+    <string name="loginFailed">Failed,pastikan username dan password yang Anda masukkan adalah benar.</string>
+    <string name="regiterSuccess">Register Success</string>
+    <string name="ini_homeeeeee">Ini Homeeeeee</string>
+    <string name="error_email">Error, email tidak valid</string>
+    <string name="error_password">Password harus terdiri dari minimal 6 karakter dan mengandung setidaknya 1 huruf kapital serta kombinasi huruf dan angka.</string>
+    <string name="error_confirm_password">Konfirmasi password tidak sesuai. Pastikan password yang Anda konfirmasi sama dengan password yang Anda masukkan sebelumnya.</string>
+    <string name="error_age">Umur tidak boleh kurang dari 18 Tahun</string>
+    <string name="average_score">Average Score</string>
+    <string name="modus_emotion">Modus Emotion</string>
+    <string name="average_score_dan_modus_emotion">Average Score Dan Modus Emotion</string>
+    <string name="space">|</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="dataNotFound">Data Kosong</string>
+
+</resources>
