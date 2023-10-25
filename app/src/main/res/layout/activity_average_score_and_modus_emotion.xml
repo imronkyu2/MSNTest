@@ -47,6 +47,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation_item_left_to_right"
         tools:listitem="@layout/adapter_view_data_user_registered" />
     <ProgressBar
         android:id="@+id/progressBar"

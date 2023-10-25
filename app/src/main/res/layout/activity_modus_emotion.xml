@@ -48,8 +48,8 @@
         android:layout_below="@+id/layoutTop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/adapter_view_data_user_registered" />
-
+        tools:listitem="@layout/adapter_view_data_user_registered"
+        android:layoutAnimation="@anim/layout_animation_item_left_to_right"/>
 
     <ProgressBar
         android:id="@+id/progressBar"

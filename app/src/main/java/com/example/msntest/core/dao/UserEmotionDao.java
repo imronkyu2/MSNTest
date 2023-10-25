@@ -36,13 +36,14 @@ public interface UserEmotionDao {
             "GROUP BY name, emotion))")
     List<ModusEmotionResult> getModusEmotion();
 
-    @Query("SELECT name, created, AVG(score) AS averageScore, emotion AS modusEmotion " +
-            "FROM UserEmotion " +
-            "GROUP BY name, created " +
-            "HAVING COUNT(emotion) = (SELECT MAX(freq) " +
-            "FROM (SELECT COUNT(emotion) AS freq " +
-            "FROM UserEmotion " +
-            "GROUP BY name, created, emotion))")
+    @Query("SELECT name, created, AVG(score) AS averageScore, " +
+            "(SELECT emotion FROM UserEmotion AS u2 " +
+            " WHERE u2.name = u1.name AND u2.created = u1.created " +
+            " GROUP BY emotion " +
+            " ORDER BY COUNT(*) DESC " +
+            " LIMIT 1) AS modusEmotion " +
+            " FROM UserEmotion AS u1 " +
+            " GROUP BY name, created")
     List<AvgScoreAndModusEmotionResult> getAvgScoreAndModusEmotion();
 
 

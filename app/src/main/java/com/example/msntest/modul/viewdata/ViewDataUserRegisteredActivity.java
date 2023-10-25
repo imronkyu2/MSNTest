@@ -28,6 +28,7 @@ public class ViewDataUserRegisteredActivity extends AppCompatActivity implements
 
         new ViewDataUserRegisteredPresenter(Injection.provideAppRepo(getApplicationContext()), this);
 
+        binding.backButton.setOnClickListener(view -> finish());
     }
 
     @Override
@@ -59,6 +60,7 @@ public class ViewDataUserRegisteredActivity extends AppCompatActivity implements
         binding.recyclerView.setLayoutManager(layoutManager);
         ViewDataUserRegisteredAdapter adapter = new ViewDataUserRegisteredAdapter(var1);
         binding.recyclerView.setAdapter(adapter);
+        binding.recyclerView.scheduleLayoutAnimation();
     }
 
     @Override

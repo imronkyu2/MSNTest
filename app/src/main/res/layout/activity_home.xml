@@ -54,7 +54,8 @@
         android:layout_below="@+id/layoutTop"
         android:layout_above="@+id/layoutBottom"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation_item_left_to_right"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

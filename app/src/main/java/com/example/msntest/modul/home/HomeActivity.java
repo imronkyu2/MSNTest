@@ -101,6 +101,7 @@ public class HomeActivity extends AppCompatActivity implements HomeViewContract 
         binding.recyclerView.setLayoutManager(layoutManager);
         HomeAdapter adapter = new HomeAdapter(var1);
         binding.recyclerView.setAdapter(adapter);
+        binding.recyclerView.scheduleLayoutAnimation();
     }
 
     @Override

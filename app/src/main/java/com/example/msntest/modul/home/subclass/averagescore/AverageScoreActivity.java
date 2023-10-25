@@ -57,5 +57,6 @@ public class AverageScoreActivity extends AppCompatActivity implements AverageSc
         binding.recyclerView.setLayoutManager(layoutManager);
         AverageScoreAdapter adapter = new AverageScoreAdapter(var11);
         binding.recyclerView.setAdapter(adapter);
+        binding.recyclerView.scheduleLayoutAnimation();
     }
 }

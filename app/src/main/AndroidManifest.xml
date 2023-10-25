@@ -14,28 +14,36 @@
         tools:targetApi="31">
         <activity
             android:name=".modul.home.subclass.averagescoreandmodusemotion.AverageScoreAndModusEmotionActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="locked"/>
         <activity
             android:name=".modul.home.subclass.modusemotion.ModusEmotionActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="locked"/>
         <activity
             android:name=".modul.home.subclass.averagescore.AverageScoreActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="locked"/>
         <activity
             android:name=".modul.home.HomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="locked"/>
         <activity
             android:name=".modul.viewdata.ViewDataUserRegisteredActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="locked"/>
         <activity
             android:name=".modul.register.RegisterActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="locked"/>
         <activity
             android:name=".modul.login.LoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="locked"/>
         <activity
             android:name=".modul.splash.SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

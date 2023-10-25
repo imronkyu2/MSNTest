@@ -59,5 +59,6 @@ public class AverageScoreAndModusEmotionActivity extends AppCompatActivity imple
         binding.recyclerView.setLayoutManager(layoutManager);
         AverageScoreAndModusEmotionAdapter adapter = new AverageScoreAndModusEmotionAdapter(var11);
         binding.recyclerView.setAdapter(adapter);
+        binding.recyclerView.scheduleLayoutAnimation();
     }
 }

@@ -10,7 +10,7 @@ public class UtilsRegex {
     }
 
     public static boolean validatePassword(String name) {
-        Matcher matcher = Pattern.compile("^(?=.*[A-Z])(?=.*[a-zA-Z0-9]).{6,}$").matcher(name);
+        Matcher matcher = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)[A-Za-z\\d]{6,}$").matcher(name);
         return matcher.find();
     }
 }

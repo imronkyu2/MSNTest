@@ -56,5 +56,6 @@ public class ModusEmotionActivity extends AppCompatActivity implements ModusEmot
         binding.recyclerView.setLayoutManager(layoutManager);
         ModusEmotionAdapter adapter = new ModusEmotionAdapter(var11);
         binding.recyclerView.setAdapter(adapter);
+        binding.recyclerView.scheduleLayoutAnimation();
     }
 }

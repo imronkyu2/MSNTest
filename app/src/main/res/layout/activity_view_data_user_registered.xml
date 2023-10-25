@@ -50,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
+        android:layoutAnimation="@anim/layout_animation_item_up_to_down"
         tools:listitem="@layout/adapter_view_data_user_registered" />
 
     <TextView
